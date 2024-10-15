@@ -1,0 +1,236 @@
+* {
+  /*Selecciona a nivel universal en la pagina*/
+  padding: 0; /*Relleno 0*/
+  margin: 0; /*Margen 0*/
+  text-decoration: none; /*Decoración de texto (ninguno)*/
+  list-style: none; /*Estilo de lista (ninguno)*/
+  box-sizing: border-box; /*Tamaño de caja (Borde de Caja)*/
+}
+
+.paentro {
+  width: 100%;
+  height: 122vh;
+  background: #383333;
+}
+nav {
+  background: #383333;
+  height: 80px;
+  width: 100%;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.enlace {
+  position: absolute; /*Ajuste de posición absoluta*/
+  padding: 20px 50px;
+}
+
+.logo {
+  height: 60px; /*Alto (logo) de 40px*/
+  border-radius: 10px;
+  width: auto;
+  margin-bottom: auto;
+  margin-right: auto;
+}
+
+nav ul {
+  float: right;
+  margin-right: 20px; /*Margen hacia la derecha 20px*/
+}
+
+nav ul li {
+  display: inline-block; /*Pantalla bloque en linea*/
+  line-height: 80px; /*Tamaño de la linea de 80px*/
+  margin: 0 5px;
+}
+
+nav ul li a {
+  /*Especificación de ubicación*/
+  color: white;
+  font-size: 18px; /*Tamaño de fuente*/
+  padding: 7px 13px; /*Relleno 7px alto 13px ancho*/
+  border-radius: 3px;
+  text-transform: uppercase; /*Transformación de texto (Mayúsculas)*/
+}
+
+li a.active,
+li a:hover {
+  /*"a.active" acción que ocurre cuando el mouse presiona sobre el elemento*/
+  /*permite que el ususario interactue como pasar el cursos o cambiar*/
+  background: none;
+  fill: #99213e;
+  filter: blur(1.6px);
+  transition: 0.5s; /*Segundos de transición*/
+}
+
+.dropdown-item {
+  position: relative;
+}
+.dropdown-item .menu4 {
+  display: none;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: #383333;
+  box-shadow: 2px 2px 5px
+    linear-gradient(90deg, #5719da 0%, rgba(0, 255, 178, 0) 100%);
+  position: absolute;
+  min-width: 150px;
+}
+.dropdown-item:hover .menu4 {
+  display: block;
+}
+.dropdown-item .menu4 ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-align: left;
+}
+.dropdown-item .menu4 li a {
+  color: none;
+  display: block;
+  padding: 5px;
+  text-decoration: none;
+}
+.dropdown-item .menu4 li a:hover {
+  background-color: linear-gradient(
+    90deg,
+    #5719da 0%,
+    rgba(0, 255, 178, 0) 100%
+  );
+  color: white;
+}
+.footer {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+.footer {
+  font-family: sans-serif;
+  width: 100%;
+  height: 32vh;
+  text-transform: capitalize;
+  background: url(https://lh3.googleusercontent.com/2RZvOOJ5C9f4AIVOv3uzjGvr6qEnqEdnGVQapR8GOwDWf0qnVfnsP0KPsTPsz_qkfG3IddOC5cc1I_qd81A2Lo2l6ryXk2KDisFdZ4ptgg)
+    no-repeat;
+  padding: 70px 0;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.footer-row {
+  display: flex;
+  flex-wrap: wrap;
+}
+.footer-links {
+  width: 25%;
+  padding: 0 15px;
+}
+.footer-links h4 {
+  font-size: 20px;
+  color: #fff;
+  margin-bottom: 25px;
+  font-weight: 500;
+  border-bottom: 2px solid #00c3ff;
+  padding-bottom: 10px;
+  display: inline-block;
+}
+.footer-links ul li {
+  font-size: 10px;
+  text-decoration: none;
+  color: gray;
+  display: block;
+  margin-bottom: 15px;
+  transition: all 0.3s ease;
+}
+.footer-links ul li a:hover {
+  color: #ffffff;
+  padding-left: 6px;
+}
+.social-links a {
+  display: inline-block;
+  min-height: 40px;
+  width: 40px;
+  background-color: rgb(255, 255, 255, 0.2);
+  margin: 0 10px 10px 0;
+  text-align: center;
+}
+
+.checkbtn {
+  font-size: 30px; /*Tamaño de fuente 30px*/
+  color: #fff;
+  float: right; /*Ajuste hacia derecha*/
+  line-height: 80px; /*Alto de la línea*/
+  margin-right: 40px; /*Margen a la derecha 40px*/
+  cursor: pointer; /*Cursor cambia en puntero*/
+  display: none; /*checkbtn (no visible en la pantalla "solo visualizacion en dispositivos pequeños")*/
+}
+
+#check {
+  /*Verificación*/
+  display: none; /*check (no visible)*/
+}
+
+.contenedor {
+  display: inline-block;
+}
+
+section {
+  background-color: #060202;
+  /*no-repeat;*/ /*No repetir imagen*/
+  background-size: cover; /*tamaño de fondo en cubierta*/
+  background-position: center center; /*Posición de fondo (centro)*/
+  height: calc(
+    100vh - 80px
+  ); /*"calc(100vh - 80px)[ocupacion del 100% pero reste los 80 px del nav]"Ajusta en que este completo (altura background) y corrige extensiones 80px*/
+}
+
+@media (max-width: 952px) {
+  /*Ancho maximo de 952 px*/
+  .enlace {
+    padding-left: 20px; /*Espacio entre el borde izquierdo */
+  }
+  nav ul li a {
+    font-size: 16px; /*Tamano de fuente*/
+  }
+}
+
+@media (max-width: 858px) {
+  .checkbtn {
+    display: block;
+  }
+
+  ul {
+    /*Especificaciones ul media */
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #2c3e50;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all 0.5s; /*Transicion de 0.5 segundos*/
+  }
+
+  nav ul li {
+    display: block; /*Elemento de bloque ancho maximo disponible */
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  nav ul li a {
+    font-size: 20px;
+  }
+  li a:hover,
+  li a.active {
+    background: none;
+    color: red;
+  }
+  #check:checked ~ ul {
+    left: 0;
+  }
+}
+.kami {
+  width: 100%;
+  height: 100%;
+  background-color: #5719da;
+}

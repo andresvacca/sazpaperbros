@@ -1,0 +1,280 @@
+* {
+  /*Selecciona a nivel universal en la pagina*/
+  padding: 0; /*Relleno 0*/
+  margin: 0; /*Margen 0*/
+  text-decoration: none; /*Decoración de texto (ninguno)*/
+  list-style: none; /*Estilo de lista (ninguno)*/
+  box-sizing: border-box; /*Tamaño de caja (Borde de Caja)*/
+}
+
+nav {
+  background: #383333;
+  height: 10.269576379974326vh;
+  width: 100%;
+  border-radius: 5px;
+}
+
+.enlace {
+  position: absolute; /*Ajuste de posición absoluta*/
+  padding: 20px 50px;
+}
+
+.logo {
+  height: 60px; /*Alto (logo) de 40px*/
+  border-radius: 10px;
+  width: auto;
+  margin-bottom: auto;
+  margin-right: auto;
+}
+
+nav ul {
+  float: right;
+  margin-right: 20px; /*Margen hacia la derecha 20px*/
+}
+
+nav ul li {
+  display: inline-block; /*Pantalla bloque en linea*/
+  line-height: 80px; /*Tamaño de la linea de 80px*/
+  margin: 0 5px;
+}
+
+nav ul li a {
+  /*Especificación de ubicación*/
+  color: white;
+  font-size: 18px; /*Tamaño de fuente*/
+  padding: 7px 13px; /*Relleno 7px alto 13px ancho*/
+  border-radius: 3px;
+  text-transform: uppercase; /*Transformación de texto (Mayúsculas)*/
+}
+
+/* li a.active, */
+li a:hover {
+  /*"a.active" acción que ocurre cuando el mouse presiona sobre el elemento*/
+  /*permite que el ususario interactue como pasar el cursos o cambiar*/
+  background: none;
+  fill: #99213e;
+  filter: blur(1.6px);
+  transition: 0.2s; /*Segundos de transición*/
+}
+
+.dropdown-item {
+  position: relative;
+}
+.dropdown-item .menu {
+  display: none;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: #383333;
+  box-shadow: 2px 2px 5px
+    linear-gradient(90deg, #5719da 0%, rgba(0, 255, 178, 0) 100%);
+  position: absolute;
+  min-width: 150px;
+}
+.dropdown-item:hover .menu {
+  display: block;
+}
+.dropdown-item .menu ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-align: left;
+}
+.dropdown-item .menu li a {
+  color: none;
+  display: block;
+  padding: 5px;
+  text-decoration: none;
+}
+.dropdown-item .menu li a:hover {
+  background-color: linear-gradient(
+    90deg,
+    #5719da 0%,
+    rgba(0, 255, 178, 0) 100%
+  );
+  color: white;
+}
+.article {
+  height: auto;
+  height: 10  00px;
+  margin: 0;
+  padding: 0;
+}
+h2 {
+  color: white;
+  text-align: center;
+  margin-top: 50px;
+  font-size: 2rem;
+}
+.slider-frame {
+  width: 1290px;
+  margin: 50px auto;
+  overflow: hidden; /*Ocultar todo lo no relevante(ocultar lo que esta afuera del alcance width y height)*/
+}
+.slider-frame ul {
+  display: flex;
+  padding: 0;
+  width:  400%;
+  animation: slide 15s infinite alternate ease-in-out;
+}
+.slider-frame li {
+  list-style: none;
+  width: 100%;
+  height: 600px;
+}
+.slider-frame img {
+  width: 100%;
+}
+@keyframes slide {
+  /*Controlador de intermedios de secuencia (largo de la secuencia de la animacion)*/
+  0% {
+    margin-left: 0%;
+  }
+  20% {
+    margin-left: 0%;
+  }
+
+  25% {
+    margin-left: -100%;
+  }
+  45% {
+    margin-left: -100%;
+  }
+
+  50% {
+    margin-left: -200%;
+  }
+  70% {
+    margin-left: -200%;
+  }
+
+  75% {
+    margin-left: -300%;
+  }
+  95% {
+    margin-left: -300%;
+  }
+}
+.footer {
+  box-sizing: border-box;
+  list-style: none;
+  text-transform: capitalize;
+  background: #060202;
+  padding: 80px 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.footer-row {
+  display: flex;
+  flex-wrap: wrap; /*Especificacion de los elementos ubica los elementos de forma recorrida*/
+}
+.footer-links {
+  width: 25%;
+  padding: 0 15px; /*divide los elementos*/
+}
+.footer-links h4 {
+  font-size: 20px;
+  color: #fff;
+  margin-bottom: 25px;
+  font-weight: 500;
+  border-bottom: 2px solid #00c3ff;
+  padding-bottom: 10px;
+  display: inline-block;
+}
+.footer-links ul li {
+  font-size: 20px;
+  text-decoration: none;
+  color: #060202;
+  display: block;
+  margin-bottom: 15px;
+  transition: all 0.3s ease;
+}
+.footer-links ul li a:hover {
+  color: #fff;
+  padding-left: 6px;
+}
+.social-links a {
+  display: inline-block;
+  min-height: 40px;
+  width: 40px;
+  background-color: rgb(255, 255, 255, 0.2);
+  margin: 0 10px 10px 0;
+  text-align: center;
+}
+.checkbtn {
+  font-size: 30px; /*Tamaño de fuente 30px*/
+  color: #fff;
+  float: right; /*Ajuste hacia derecha*/
+  line-height: 80px; /*Alto de la línea*/
+  margin-right: 40px; /*Margen a la derecha 40px*/
+  cursor: pointer; /*Cursor cambia en puntero*/
+  display: none; /*checkbtn (no visible en la pantalla "solo visualizacion en dispositivos pequeños")*/
+}
+
+#check {
+  /*Verificación*/
+  display: none; /*check (no visible)*/
+}
+
+.contenedor {
+  display: inline-block;
+}
+
+section {
+  background-color: #060202;
+  /*no-repeat;*/ /*No repetir imagen*/
+  background-size: cover; /*tamaño de fondo en cubierta*/
+  background-position: center center; /*Posición de fondo (centro)*/
+  height: calc(
+    100vh - 80px
+  ); /*"calc(100vh - 80px)[ocupacion del 100% pero reste los 80 px del nav]"Ajusta en que este completo (altura background) y corrige extensiones 80px*/
+}
+
+@media (max-width: 952px) {
+  /*Ancho maximo de 952 px*/
+  .enlace {
+    padding-left: 20px; /*Espacio entre el borde izquierdo */
+  }
+  nav ul li a {
+    font-size: 16px; /*Tamano de fuente*/
+  }
+}
+
+@media (max-width: 858px) {
+  .checkbtn {
+    display: block;
+  }
+
+  ul {
+    /*Especificaciones ul media */
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #060202;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all 2s; /*Transicion de 0.5 segundos*/
+  }
+
+  nav ul li {
+    display: block; /*Elemento de bloque ancho maximo disponible */
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  nav ul li a {
+    font-size: 20px;
+  }
+  li a:hover,
+  li a.active {
+    background: none;
+    color: red;
+  }
+  #check:checked ~ ul {
+    left: 0;
+  }
+}
+
+

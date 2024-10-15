@@ -1,0 +1,67 @@
+html {
+  background: linear-gradient(90deg, #39283d 0%, rgba(0, 255, 194, 0.28) 100%);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /**/
+}
+body {
+  width: 100%;
+  height: 100vh; /*viewport height: es laocupación de un equivalente (Altura del dispositivo)*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: sans-serif;
+}
+.container {
+  width: 400%;
+  display: flex; /*Info visual que permite controlar (ser visual en el diseño) [flexible a conforme al contenido]------------*/
+  max-width: 1500px;
+}
+.card {
+  widows: 400%; /*Especificacion del minimo de lineas de un contenedor (región o columna)*/
+  margin: 10px;
+  border-radius: 6px;
+  overflow: hidden; /*Determinación de lo que sucede en los limites( Regular la visibilidad) [Hidden hace que el contenido que sobresale se oculte]*/
+  background: #fff;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+  cursor: default;
+  transition: all 400ms ease;
+}
+.card a:hover {
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+  transform: translateY(
+    -3%
+  ); /*Permite modificar el espacio segun las coordenadas(Formato visual)*/
+}
+.card img {
+  width: 100%;
+  height: 600px;
+}
+.card .conteido {
+  padding: 15px;
+  text-align: center;
+}
+.card .conteido p {
+  line-height: 1.5;
+  color: #6a6a6a;
+}
+.card.conteido h3 {
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+.card .contenido a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 10px;
+  margin-top: 10px;
+  color: #fb4c;
+  border: 1px solid #fb4c;
+  border-radius: 4px;
+  transition: all 400ms ease;
+}
+.card .conteido a:hover {
+  background: #fb4c;
+  color: #fff;
+}
